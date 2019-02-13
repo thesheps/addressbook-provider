@@ -4,6 +4,7 @@ import (
         "github.com/hashicorp/terraform/helper/schema"
 )
 
+// contact factory method which returns a pointer to the created contact resource
 func contact() *schema.Resource {
         return &schema.Resource{
                 Create: contactCreate,
